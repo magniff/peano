@@ -100,5 +100,7 @@ fn main() {
     let _: Same<Add<One, One>, Two>;
     let _: Same<Mul<Two, Two>, Four>;
     // factorial of 4 is 24
+    let _: Same<Fac<Four>, Add<Four, Mul<Two, Ten>>>;
+    // and factorial of 4 is not 23
     let _: Same<Fac<Four>, Add<Three, Mul<Two, Ten>>>;
 }
